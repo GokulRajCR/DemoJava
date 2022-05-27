@@ -42,6 +42,7 @@ if(opText.equals("C"))
 {  
 cl.number=0.0; cl.op=' '; cl.memValue=0.0;  
 cl.memLabel.setText(" ");  
+//membeer  details
 }  
   
 //it must be CE button pressed  
