@@ -3,4 +3,63 @@
   <groupId>DemoProject</groupId>
   <artifactId>Demo1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+ 
+<properties>
+<sonar.organization>gokulrajcr</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+ <maven.compiler.source>14</maven.compiler.source>
+ <maven.compiler.target>14</maven.compiler.target>
+ <sonar.host.url>
+http://localhost:9000
+</sonar.host.url>
+ <sonar.username>
+admin
+</sonar.username>
+ <sonar.password>
+admin1
+</sonar.password>
+</properties>
+<dependencies>
+<dependency>
+ <groupId>org.seleniumhq.selenium</groupId>
+ <artifactId>selenium-java</artifactId>
+ <version>4.0.0-alpha-7</version>
+</dependency>
+<dependency>
+ <groupId>org.seleniumhq.selenium</groupId>
+ <artifactId>selenium-firefox-driver</artifactId>
+ <version>4.0.0-alpha-7</version>
+</dependency>
+<dependency>
+ <groupId>org.seleniumhq.selenium</groupId>
+ <artifactId>selenium-edge-driver</artifactId>
+ <version>4.0.0-alpha-7</version>
+</dependency>
+<dependency>
+ <groupId>org.testng</groupId>
+ <artifactId>testng</artifactId>
+ <version>6.8</version>
+</dependency>
+ <dependency>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.7.0.1746</version>
+    </dependency>
+<dependency>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>3.2</version>
+</dependency>
+</dependencies>
+<build>
+<pluginManagement>
+<plugins>
+<plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-surefire-plugin</artifactId>
+ <version>3.0.0-M5</version>
+</plugin>
+</plugins>
+</pluginManagement>
+</build>
 </project>
